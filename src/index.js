@@ -4,12 +4,12 @@ const marcas = ['Toyota', 'Nisan', 'Chevrolet'];
 // console.log(marcas[1]);
 // console.log(marcas[2]);
 
-// const [ m1 ] = marcas;
+const [ m1, m2, m3 ] = marcas;
 // const [ ,m2 ] = marcas;
-const [ , ,m3 ] = marcas;
+// const [ , ,m3 ] = marcas;
 
-// console.log(m1);
-// console.log(m2);
+console.log(m1);
+console.log(m2);
 console.log(m3);
 
 const retornaAreglo = () => {
@@ -27,8 +27,8 @@ const ejercicio = (valor) => {
     return [valor, () => { console.log('Hola Mundo')}];
 };
 
-// const arr = ejercicio('Toyota');
-// console.log(arr);
+const arr = ejercicio('Toyota');
+console.log(arr);
 
 const  [nombre, setEjercicio]= ejercicio('Toyota');
 
