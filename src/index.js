@@ -4,10 +4,10 @@
 // con alguna cantidad de indices por defecto
 // const arreglo = new Array();
 
-// const arreglo = [];
+// let arreglo = [];
 // arreglo.push(1);
 
-// let arreglo2 = arreglo;
+// let arreglo2 =  [...arreglo];
 // arreglo2.push(5);
 
 // console.log(arreglo);
@@ -19,7 +19,7 @@
 // // arreglo.push(1);
 
 // // para utilizar el operador spread con arreglos ponemos llaves cuadradas []
-// let arreglo2 = [arreglo, 5];
+// let arreglo2 = [...arreglo, 5];
 // // arreglo2.push(5);
 
 // console.log(arreglo);
@@ -29,14 +29,16 @@
 /**------------------------------------------- */
 
 const arreglo = [1, 2, 3, 4];
-// arreglo.push(1);
+arreglo.push(1);
 
 // para utilizar el operador spread con arreglos ponemos llaves cuadradas []
 let arreglo2 = [...arreglo, 5];
 
-const arreglo3 = arreglo2.map( function(numero) {
+let arreglo3 = arreglo2.map( (numero) => {
     return numero * 2;
 });
+
+
 
 console.log(arreglo);
 console.log(arreglo2);
