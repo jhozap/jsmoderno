@@ -1,9 +1,9 @@
-import { heroes } from './Data/heroes';
+// import { heroes } from './Data/heroes';
 // importacion por defecto
 // import heroes from './Data/heroes';
 
 // importacion por defecto + importacion individual
-// import heroes, { owners } from './Data/heroes';
+import heroes, { owners } from './Data/heroes';
 
 // importacion especifica
 // import { heroes, owners } from './Data/heroes';
