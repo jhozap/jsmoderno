@@ -28,13 +28,17 @@
 
 // const promesa = new Promise( (resolve, reject) => {
 //     setTimeout(() => {
-//         resolve();
+//         // resolve();
+//         reject();
 //     }, 2000);
 // });
 
-// promesa resuelta de manera correcta
+// // promesa resuelta de manera correcta
 // promesa.then( () => {
 //     console.log('Then de la promesa');
+// })
+// .catch( ()=> {
+//     console.warn("reject de la promesa")
 // });
 
 // *******************************************************
@@ -43,7 +47,7 @@
 
 // const promesa = new Promise( (resolve, reject) => {
 //     setTimeout(() => {
-//         const heroe = getHeroeById(2);
+//         const heroe = getHeroeById(10);
 //         resolve(heroe);
 //         // reject('No se pudo encontrar el heroe');
 //     }, 2000);
@@ -65,15 +69,12 @@ const getHeroeByIdAsync = (id) => {
     const promesa = new Promise((resolve, reject) => {
         setTimeout(() => {
             const heroe = getHeroeById(id);
-            // resolve(heroe);
 
             if (heroe) {
                 resolve(heroe);
             } else {
                 reject('No se pudo encontrar el heroe');
             }
-
-            // reject('No se pudo encontrar el heroe');
         }, 2000)
     });
 
@@ -88,9 +89,9 @@ getHeroeByIdAsync(4)
 
 
 // imprimir por referencia de objeto
-// getHeroeByIdAsync(10)
-//     .then(console.log)
-//     .catch(console.warn);
+getHeroeByIdAsync(2)
+    .then(console.log)
+    .catch(console.warn);
 
 
 
