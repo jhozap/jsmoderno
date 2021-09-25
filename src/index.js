@@ -3,9 +3,11 @@
 const nombre = 'Jhonny';
 const apellido = 'Zapata';
 
-// const nombreCompleto = nombre + ' ' + Apellido;
+// const nombreCompleto = nombre + ' ' + apellido;
+
+
 // `` backtick -> altGr + }
-const nombreCompleto = `${ nombre } ${ apellido }`;
+const nombreCompleto = `Hola, ${ nombre } ${ apellido }`; 
 
 // const nombreCompleto = `
 //     ${ nombre } 
@@ -16,14 +18,14 @@ const nombreCompleto = `${ nombre } ${ apellido }`;
 console.log(nombreCompleto);
 
 
-// function getSaludo() {
-//     return 'Hola Mundo';
-// }
+function getSaludo() {
+    return 'Hola Mundo';
+}
 
-// console.log(`Este es un texto: ${ getSaludo() }`);
+console.log(`Este es un texto: ${ getSaludo() }`);
 
-function getSaludo(nombre) {
+function getSaludo2(nombre) {
     return 'Hola ' + nombre;
 }
 
-console.log(`Este es un texto: ${ getSaludo(nombre) }`);
+console.log(`Este es un texto: ${ getSaludo2(nombre) }`);
