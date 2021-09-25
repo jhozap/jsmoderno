@@ -1,20 +1,16 @@
 import { heroes } from './Data/heroes';
+// importacion por defecto
+// import heroes from './Data/heroes';
 
-// console.log(heroes);
+// importacion por defecto + importacion individual
+// import heroes, { owners } from './Data/heroes';
 
-// const getHeroeById = (id) => {
-//     return heroes.find( (heroe) => {
-//         if (heroe.id === id) {
-//             return true;
-//         } else {
-//             return false;
-//         }
-//     });
-// };
+// importacion especifica
+// import { heroes, owners } from './Data/heroes';
 
-// const getHeroeById = (id) => {
-//     return heroes.find( (heroe) => heroe.id === id);
-// };
+
+// console.log(owners);
+
 
 const getHeroeById = (id) =>  heroes.find( (heroe) => heroe.id === id);
 
@@ -22,4 +18,4 @@ console.log(getHeroeById(2));
 
 const getHeroeByOwner = (owner) =>  heroes.filter( (heroe) => heroe.owner === owner);
 
-console.log(getHeroeByOwner('DC'))
+console.log(getHeroeByOwner('DC'));
