@@ -1,7 +1,8 @@
 // funcion convencional
 // function saludar(nombre) {
 //     return `Hola, ${ nombre }`;
-// }
+// };
+
 
 // funcion mendiante asignacion constante
 // const saludar = function(nombre) {
@@ -9,18 +10,19 @@
 // }
 
 // funcion de flecha
-const saludar = (nombre) => {
-    return `Hola, ${nombre}`;
-}
+const saludar = (nombre) => `Hola, ${nombre}`;
 
-// funcion de flecha optimizada
+console.log(saludar('Jhonny'));
+
+// // funcion de flecha optimizada
 const saludar2 = (nombre) => `Hola, ${nombre}`;
 
+console.log(saludar2('Jhonny'));
 
 // saludar = 20;
 
-console.log(saludar('Jhonny'));
-console.log(saludar2('Jhonny'));
+// console.log(saludar('Jhonny'));
+// console.log(saludar2('Jhonny'));
 
 
 const getUSer = () => {
@@ -39,18 +41,19 @@ console.log(getUSer());
 console.log(getUSer2());
 
 // ejercicio de retorno implicito
-function getUsuarioACtivo(nombre) {
-    return {
-        id: 123,
-        username: nombre
-    }
-}
+// function getUsuarioActivo(nombre) {
+//     return {
+//         id: 123,
+//         username: nombre
+//     }
+// }
 
-// solucion ejercicio de funcion de flecha y retorno implicito
-// const getUsuarioACtivo = (nombre) => ({
-//     id: 123,
-//     username: nombre
-// });
+const getUsuarioActivo = (nombre) => ({
+    id: 123,
+    username: nombre
+});
 
-console.log(getUsuarioACtivo('Pruebas'));
+
+
+console.log(getUsuarioActivo('Pruebas'));
 
